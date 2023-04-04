@@ -14,29 +14,45 @@ struct RecipeListView: View {
     var body: some View {
         
         NavigationView {
-            List(model.recipes) { r in
+            
+            VStack(alignment: .leading) {
+                Text("All Recipes")
+                    .font(.largeTitle)
+                    .padding(.top,40)
+                    .bold()
                 
-                NavigationLink(
-                    destination: RecipeDetailView(recipe:r),
-                    label: {
+                ScrollView {
+                    
+                    LazyVStack(alignment: .leading) {
                         
-                        // MARK: Row item
-                        HStack(spacing: 20.0) {
-                            Image(r.image)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 50, height: 50, alignment: .center)
-                                .clipped()
-                                .cornerRadius(5)
-                            Text(r.name)
+                        ForEach(model.recipes) { r in
+                            
+                            NavigationLink(
+                                destination: RecipeDetailView(recipe:r),
+                                label: {
+                                    
+                                    // MARK: Row item
+                                    HStack(spacing: 20.0) {
+                                        Image(r.image)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: 50, height: 50, alignment: .center)
+                                            .clipped()
+                                            .cornerRadius(5)
+                                        Text(r.name)
+                                            .foregroundColor(.black)
+                                    }
+                                    
+                                })
+                            
+                            
+                            
                         }
-                        
-                    })
+                    }
+                }
                 
-                
-                
-            }
-            .navigationBarTitle("All Recipes")
+            }.padding(.leading)
+            
         }
     }
 }
@@ -44,5 +60,6 @@ struct RecipeListView: View {
 struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeListView()
+            .environmentObject(RecipeModel())
     }
 }
