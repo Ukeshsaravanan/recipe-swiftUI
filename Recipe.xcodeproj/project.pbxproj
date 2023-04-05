@@ -19,6 +19,7 @@
 		6F78F36529DC25D7006BEBE7 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F78F36429DC25D7006BEBE7 /* RecipeTabView.swift */; };
 		6F78F36729DC398E006BEBE7 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F78F36629DC398E006BEBE7 /* RecipeFeaturedView.swift */; };
 		6FE1F7D829DDE260001C0797 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1F7D729DDE260001C0797 /* Rational.swift */; };
+		6FE1F7DA29DDF25C001C0797 /* RecipeHighlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1F7D929DDF25C001C0797 /* RecipeHighlightsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		6F78F36429DC25D7006BEBE7 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		6F78F36629DC398E006BEBE7 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
 		6FE1F7D729DDE260001C0797 /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
+		6FE1F7D929DDF25C001C0797 /* RecipeHighlightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlightsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				6F78F36629DC398E006BEBE7 /* RecipeFeaturedView.swift */,
 				6F78F36229DC1BBA006BEBE7 /* RecipeDetailView.swift */,
 				6F78F36429DC25D7006BEBE7 /* RecipeTabView.swift */,
+				6FE1F7D929DDF25C001C0797 /* RecipeHighlightsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				6FE1F7D829DDE260001C0797 /* Rational.swift in Sources */,
 				6F78F34829DC191D006BEBE7 /* RecipeApp.swift in Sources */,
 				6F78F35B29DC19CF006BEBE7 /* RecipeModel.swift in Sources */,
+				6FE1F7DA29DDF25C001C0797 /* RecipeHighlightsView.swift in Sources */,
 				6F78F35D29DC19E7006BEBE7 /* Recipe.swift in Sources */,
 				6F78F35F29DC1A0C006BEBE7 /* DataService.swift in Sources */,
 				6F78F36729DC398E006BEBE7 /* RecipeFeaturedView.swift in Sources */,
